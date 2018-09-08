@@ -1,0 +1,9 @@
+<!-- ERB (Embedded RuBy) es una característica de Ruby que le permite generar convenientemente cualquier clase de texto, en cualquier cantidad, desde las plantillas. Las plantillas mismas combinan texto sin formato con código Ruby para sustitución de variables y control de flujo, lo que facilita su escritura y mantenimiento. -->
+
+<h1>Lista de publicaciones</h1>
+<% @posts.each do |post| %>
+  <br>
+  <h2><%= post['title'] %></h2>
+  <p><%= post['body'] %></p>
+  <hr />
+<% end %>
